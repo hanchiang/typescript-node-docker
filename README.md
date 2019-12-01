@@ -1,5 +1,11 @@
 # Introduction
-This is a typescript koa project, with docker, docker compose, error handlers, test, prettier, eslint set up
+This is a typescript koa project with the following features:
+* docker with multi stage build for development and production
+* docker compose for development
+* error handlers
+* tests with mocha and sinon
+* prettier
+* eslint
 
 # Setup
 ## Install required tools
@@ -14,12 +20,15 @@ This is a typescript koa project, with docker, docker compose, error handlers, t
 * `COOKIE_SECRET=mycookiesecret`
 * `NODE_ENV=development`
 
-# Running the project
+# Using the project
 **Run in development mode**
 * Build: `docker-compose build`
 * Start: `docker-compose up -d`
-* Server is available at: `localhost:6001`
+* Server is available at: `localhost:3000`
 * Stop: `docker-compose down`
+
+**Build production image**
+* `npm run docker-build-prod`
 
 # Note
 Whenever new packages are added via `npm install`:
