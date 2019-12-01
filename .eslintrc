@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "koa",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+  "plugins": [
+    "prettier",
+    "@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "arrow-parens": 0,
+    "no-unused-vars": 0,
+  }
+}

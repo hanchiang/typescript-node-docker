@@ -1,0 +1,9 @@
+version: "3.4"
+
+services:
+  node-app:
+    environment:
+      - NODE_ENV=development
+      - COOKIE_SECRET=cookiesecret
+    ports:
+      - 3000:3000
