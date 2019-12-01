@@ -37,7 +37,6 @@ logger._emit = (rec, noemit) => {
   bunyan.prototype._emit.call(logger, rec, noemit);
 };
 
-
 export const requestLoggerOpts = {
   // this method mutates ctx
   updateLogFields: (ctx) => {
